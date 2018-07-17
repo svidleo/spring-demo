@@ -4,7 +4,11 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3307/students
+    url: jdbc:mysql://localhost:3307/demo
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
